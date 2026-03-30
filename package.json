@@ -1,0 +1,10 @@
+{
+  "name": "alex-grill-makin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Browser game: Alex's Grill makin'",
+  "scripts": {
+    "lint": "node --check game.js",
+    "start": "python3 -m http.server 8000"
+  }
+}

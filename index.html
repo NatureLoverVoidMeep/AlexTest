@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex's Grill makin'</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main id="app">
+      <section id="start-screen" class="screen active">
+        <h1>Alex's Grill makin'</h1>
+        <p class="subtitle">Basement BBQ Challenge</p>
+        <p>
+          You are <strong>Alex</strong>, grilling ribs in your basement kitchen,
+          then plating them with chips for a street-side food review.
+        </p>
+        <div class="character-row">
+          <figure>
+            <img src="assets/alex.svg" alt="Alex player portrait" />
+            <figcaption>Alex (You)</figcaption>
+          </figure>
+        </div>
+        <button id="play-btn">Play</button>
+      </section>
+
+      <section id="game-screen" class="screen">
+        <header>
+          <h2>Objective: Cook ribs + chips and serve in the middle of the street</h2>
+          <p id="dialogue"></p>
+        </header>
+
+        <div class="status-panel">
+          <div>Stage: <span id="stage-name">Prep</span></div>
+          <div>Rib Quality: <span id="rib-quality">0</span>/100</div>
+          <div>Chip Quality: <span id="chip-quality">0</span>/100</div>
+          <div>Hype: <span id="hype">0</span>/100</div>
+        </div>
+
+        <div class="kitchen">
+          <div class="station">
+            <h3>Ribs Station</h3>
+            <button data-action="season">Season Ribs</button>
+            <button data-action="sear">Sear Ribs</button>
+            <button data-action="sauce">Glaze with Sauce</button>
+            <button data-action="rest">Rest the Meat</button>
+          </div>
+
+          <div class="station">
+            <h3>Chips Station</h3>
+            <button data-action="slice">Slice Potatoes</button>
+            <button data-action="fry">Fry Chips</button>
+            <button data-action="salt">Season Chips</button>
+            <button data-action="bowl">Bowl the Chips</button>
+          </div>
+
+          <div class="station">
+            <h3>Service</h3>
+            <button data-action="plate">Plate Ribs + Chips</button>
+            <button data-action="street">Serve in Street</button>
+            <button id="finish-btn" disabled>Call the Critic</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="end-screen" class="screen">
+        <h2>Food Review</h2>
+        <img id="critic-image" src="assets/critic.svg" alt="Food critic" />
+        <p id="final-dialogue"></p>
+        <p id="final-score"></p>
+        <button id="restart-btn">Cook Again</button>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>

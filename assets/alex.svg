@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 340" role="img" aria-label="Alex portrait">
+  <rect width="260" height="340" fill="#e6eef8"/>
+  <rect x="60" y="120" width="140" height="170" rx="18" fill="#1f5faa"/>
+  <rect x="95" y="145" width="70" height="110" fill="#ffffff"/>
+  <circle cx="130" cy="70" r="34" fill="#f2c8a4"/>
+  <rect x="96" y="32" width="68" height="20" rx="8" fill="#6e4f32"/>
+  <text x="130" y="22" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#113c6f">ALEX</text>
+</svg>
